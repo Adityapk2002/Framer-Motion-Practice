@@ -2,12 +2,15 @@ import { easeIn, easeInOut, easeOut, motion } from "framer-motion"
 import "./index.css"
 import { Loader } from "./components/loader"
 import { TextScale } from "./components/TextScale"
+import { Card } from "./components/card"
+import { Content } from "./components/content"
 
 function App() {
   return (
     <>
     {/* <Loader/> */}
-    <TextScale/>
+    {/* <TextScale/> */}
+    <Content/>
     </>
 
 
