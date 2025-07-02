@@ -4,13 +4,15 @@ import { Loader } from "./components/loader"
 import { TextScale } from "./components/TextScale"
 import { Card } from "./components/card"
 import { Content } from "./components/content"
+import { FloatingDock } from "./components/FloatingDock"
 
 function App() {
   return (
     <>
     {/* <Loader/> */}
     {/* <TextScale/> */}
-    <Content/>
+    {/* <Content/> */}
+    <FloatingDock/>
     </>
 
 
