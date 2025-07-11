@@ -24,7 +24,7 @@ const Cursor = () => {
                 maskSize : `${size}px`
             }}>
                 <p className="max-w-2xl text-white text-center text-5xl font-semibold">
-                    A visual designer - with skills that haven't been replaced by AI -
+                    A <span className="text-black">visual designer</span> - with skills that haven't been replaced by AI -
                     making good shit only if the paycheck is equally good
                 </p>
             </motion.div>
