@@ -6,6 +6,8 @@ import { Card } from "./components/card"
 import { Content } from "./components/content"
 import { FloatingDock } from "./components/FloatingDock"
 import Cursor from "./components/MaskCursor"
+import CustomCursor from "./components/Customcursor"
+import MagneticButton from "./components/MagneticButton"
 
 function App() {
   return (
@@ -14,7 +16,11 @@ function App() {
     {/* <TextScale/> */}
     {/* <Content/> */}
     {/* <FloatingDock/> */}
-    <Cursor/>
+    {/* <Cursor/> */}
+    <div className="flex justify-center items-center h-screen">
+    <CustomCursor/>
+    <MagneticButton>Hover me</MagneticButton>
+    </div>
     </>
 
 
