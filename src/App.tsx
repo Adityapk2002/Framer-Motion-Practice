@@ -5,6 +5,7 @@ import { TextScale } from "./components/TextScale"
 import { Card } from "./components/card"
 import { Content } from "./components/content"
 import { FloatingDock } from "./components/FloatingDock"
+import Cursor from "./components/MaskCursor"
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     {/* <Loader/> */}
     {/* <TextScale/> */}
     {/* <Content/> */}
-    <FloatingDock/>
+    {/* <FloatingDock/> */}
+    <Cursor/>
     </>
 
 
