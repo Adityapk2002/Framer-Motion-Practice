@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimate, stagger, AnimatePresence } from "framer-motion";
 import { Bot, BotIcon, ChevronDown } from "lucide-react";
 
@@ -41,6 +41,12 @@ const ChatWindow = ({
   const [scope, animate] = useAnimate();
   const [messages, setMessages] = useState<string[]>([]);
   const [input, setInput] = useState("");
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({behavior:"smooth"})
+  },[messages])
+
 
   useEffect(() => {
     animate(
@@ -78,8 +84,7 @@ const ChatWindow = ({
         </div>
         <button
           onClick={() => setOpen(false)}
-          className="h-6 w-6 flex items-center justify-center cursor-pointer rounded-full hover:bg-gray-100"
-        >
+          className="h-6 w-6 flex items-center justify-center cursor-pointer rounded-full hover:bg-gray-100">
           <ChevronDown />
         </button>
       </div>
@@ -109,6 +114,7 @@ const ChatWindow = ({
             </div>
           ))
         )}
+        <div ref={bottomRef}/>
       </div>
 
       {/* Input Field */}
