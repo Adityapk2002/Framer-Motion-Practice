@@ -8,6 +8,7 @@ import { FloatingDock } from "./components/FloatingDock"
 import Cursor from "./components/MaskCursor"
 import CustomCursor from "./components/Customcursor"
 import MagneticButton from "./components/MagneticButton"
+import { Grok } from "./components/chatbot"
 
 function App() {
   return (
@@ -17,38 +18,12 @@ function App() {
     {/* <Content/> */}
     {/* <FloatingDock/> */}
     {/* <Cursor/> */}
-    <div className="flex justify-center items-center h-screen">
+    {/* <div className="flex justify-center items-center h-screen">
     <CustomCursor/>
     <MagneticButton>Hover me</MagneticButton>
-    </div>
+    </div> */}
+    <Grok/>
     </>
-
-
-    // <div className="bg-gray-900 flex justify-center items-center h-screen">
-      // <motion.div className="h-24 w-24 bg-yellow-400 rounded-full"
-      // animate = {{skew : 50}}
-      // Outer braces { } - Tell JSX "this is JavaScript code, not a string"
-      // Inner braces { } - Create a JavaScript object literal
-
-      // initial = {{x : 0}}
-      // animate = {{ x : 200}}
-      // transition={{
-      //   delay : 1,
-      //   ease : 'easeIn',
-      // }}
-
-
-      // animate = {{
-      //   scale : [1,2,3,4,3,2,1],
-      //   borderRadius : ["20%","20%","50%","50%","20%"]
-      // }}
-      // transition={{
-      //   duration : 2,
-      //   ease : easeOut
-      // }}
-
-      // ></motion.div>
-    // </div>
 
   )
 }
