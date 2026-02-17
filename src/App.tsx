@@ -1,42 +1,44 @@
-import { easeIn, easeInOut, easeOut, motion } from "framer-motion"
-import "./index.css"
-import { Loader } from "./components/loader"
-import { TextScale } from "./components/TextScale"
-import { Card } from "./components/card"
-import { Content } from "./components/content"
-import { FloatingDock } from "./components/FloatingDock"
-import Cursor from "./components/MaskCursor"
-import CustomCursor from "./components/Customcursor"
-import MagneticButton from "./components/MagneticButton"
-import { Grok } from "./components/chatbot"
+// import { easeIn, easeInOut, easeOut, motion } from "framer-motion"
+import NavBar from "./components/navBar";
+import "./index.css";
+// import { Loader } from "./components/loader"
+// import { TextScale } from "./components/TextScale"
+// import { Card } from "./components/card"
+// import { Content } from "./components/content"
+// import { FloatingDock } from "./components/FloatingDock";
+// import Cursor from "./components/MaskCursor"
+// import CustomCursor from "./components/Customcursor"
+// import MagneticButton from "./components/MagneticButton"
+// import { Grok } from "./components/chatbot"
+// import Rotatingtitles from "./components/Rotating"
+// import Cube3D from "./components/cube"
+// import WordTransition from "./components/cube"
 
 function App() {
   return (
     <>
-    {/* <Loader/> */}
-    {/* <TextScale/> */}
-    {/* <Content/> */}
-    {/* <FloatingDock/> */}
-    {/* <Cursor/> */}
-    {/* <div className="flex justify-center items-center h-screen">
+      {/* <Loader/> */}
+      {/* <TextScale/> */}
+      {/* <Content/> */}
+      {/* <FloatingDock /> */}
+      {/* <Cursor/> */}
+      {/* <div className="flex justify-center items-center h-screen">
     <CustomCursor/>
     <MagneticButton>Hover me</MagneticButton>
     </div> */}
-    <Grok/>
-    </>
+      {/* <Grok/> */}
+      {/* <Rotatingtitles/> */}
+      {/* <WordTransition/> */}
 
-  )
+      <NavBar />
+    </>
+  );
 }
 
+export default App;
 
-export default App
-
-
-
-
-
-
-    {/* <div className="h-screen w-full bg-neutral-900 flex items-center justify-center">
+{
+  /* <div className="h-screen w-full bg-neutral-900 flex items-center justify-center">
       <motion.button 
       // initial = {{
       //   rotate : 0
@@ -59,15 +61,19 @@ export default App
       <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 inset-x-0 bottom-px bg-gradient-to-r from-transparent
       via-cyan-500 to-transparent h-[4px] w-full mx-auto blur-sm"></span></motion.button>
       
-    </div> */}
+    </div> */
+}
 
-    {/* initial = " " this prop define how initial component render
+{
+  /* initial = " " this prop define how initial component render
     ..animate ="" this prop animate the component lets you set the different css properties
-    exit = "" this prop used to define the component is removed from dom */}
+    exit = "" this prop used to define the component is removed from dom */
+}
 
-     
-    {/* </>
+{
+  /* </>
   )
 }
 
-export default App */}
+export default App */
+}
